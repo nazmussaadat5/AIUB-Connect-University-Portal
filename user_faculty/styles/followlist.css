@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: auto;
+}
+#wrapper{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+.sidebar{
+    width: 20%;
+    height: 100vh;
+    padding: 20px;
+    border: 1px solid #e6ecf0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: flex-start;
+    background-color: #497FAF;
+
+}
+.sidebar-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+   
+}
+.sidebar-item img{
+    margin-right: 10px;
+    filter: none;
+
+}
+.sidebar-item a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.sidebar-item button{
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 49px;
+	width: 230px;
+    transition: all 0.3s;
+    
+
+}
+.sidebar-item button:hover{
+    transition: 0.3s;
+	background-color: #2290d4;
+}
+.Middle-bar{
+    width: 50%;
+    padding: 20px;
+
+    margin-left: 20%;
+    height: calc(100vh - 40px);
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.friend-item{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    
+    
+
+}
+.friend-item .profile-pic img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.friend-item .user-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+}
+.unfollow-btn-container button{
+    background-color: #1DA1F2;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+   margin-left: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right-side-bar{
+    width: 25%;
+    background-color: #ffffff;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border: 1px solid #e6ecf0;
+}
+#search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+#searchuser{
+    background-color:#f4f2f2 ;
+    border: none;
+    color: #646464;
+    border-radius: 30px;
+    padding: 0.7rem 1rem;
+    width: 20em;
+    transition: all ease-in-out .5s;
+  margin-right: -2rem;
+}
+#searchuser:hover,#searchuser:focus{
+    box-shadow: 0 0 1em #00000013;
+}
+#searchuser:focus{
+    outline: none;
+    background-color: #f0eeee;
+}
+#searchuser::placeholder{
+    font-weight: 100;
+    color: #ccc;
+}
+#searchuser:focus + .searchbutton{
+    background-color: #f0eeee;
+}
+.searchbutton{
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: .1em;
+}
+.searchbutton:hover{
+    cursor: pointer;
+}
+
+.searchbutton img{
+    height: 1.3em;
+    width: 1.3em;
+    fill: #b4b4b4;
+
+   
+}
+#searchuser:focus + .searchbutton img{
+    fill: #1da1f2;
+}
+#search-results {
+    margin-top: 20px;
+}
+
+.search-result {
+    display: flex;
+    align-items: center;
+    
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.search-result .profile-pic {
+    margin-right: 10px;
+}
+
+.profile-pic img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+
+    
+}
+.user-info a {
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.user-info a strong {
+    margin-bottom: 5px; 
+    font-size: 20px;
+    color: black;
+}
+
+
+.follow-btn-container {
+    margin-left: 10px;
+}
+
+.follow-btn {
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
